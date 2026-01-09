@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Styles/navigation.css">
+    <link rel="stylesheet" href="Styles/middle.css">
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    
+    <header>
+        <div class="left">
+
+            <a href="About.html">Amouchi Thamazgha</a>
+     
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <spanc class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="works.html" class="nav__link">My works</a></li>
+                <li class="nav__item"><a href="About.html" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <form onsubmit="sendEmail(); reset; return false">
+                <div class="headline">
+                    <h4>GET IN TOUCH</h4>
+                </div>
+                
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="message" rows="4" placeholder="Message"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+
+        </div>
+        <div class="contact-container-2">
+            <div class="alternative">
+                <h4>You can also find me on:</h4>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/_katcreations_/" target="_blank">
+                     <h3>Instagram</h3>
+                </a>
+            </div>
+
+            <div class="social-icon">
+                <a href="https://github.com/Serpens10" target="_blank">
+                    <h3>GitHub</h3>
+                </a>
+            </div>
+            
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/thamazgha-amouchi-3446ba239/" target="_blank">
+                    <h3>LinkedIn</h3>
+                </a>
+
+            </div>
+
+            <div class="social-icon">
+                <h3>Or you can e-mail me directly <a href="mailto: aamouchi.t@gmail.com">HERE</a></h3>
+                
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <div class="footer">
+
+        <div class="navigation-links">
+
+            <div class="navigation">
+                <a href="index.html"><h3>Home</h3></a>
+            </div>
+
+            <div class="navigation">
+                <a href="works.html"><h3>Works</h3></a>
+            </div>
+
+            <div class="navigation">
+                <a href="About.html"><h3>About</h3></a>
+            </div>
+
+            <div class="navigation">
+                <a href="Contact.html"><h3>Contact</h3></a>
+            </div>
+
+        </div>   
+        
+        <div class="social-links">
+
+            <div class="social-icon">
+                <a href="https://www.instagram.com/k.welshe/" target="_blank">
+                     <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                
+            </div>
+
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/thamazgha-amouchi-3446ba239/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+            <div class="social-icon">
+                <a href="https://github.com/Serpens10" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </div>
+
+            <div class="social-icon">
+                <i class="fa-solid fa-share-from-square"></i>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p> &copy; 2023 Amouchi Thamazgha &#124; All Rights Reserved </p>
+        </div>
+
+    </div>
+
+    <script src="Styles/index.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "aamouchi.t@gmail.com",
+                Password : "",
+                To : 'aamouchi.t@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Portfolio contact inquiry",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>
