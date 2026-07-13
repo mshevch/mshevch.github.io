@@ -1,167 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="Styles/navigation.css">
-    <link rel="stylesheet" href="Styles/middle.css">
-    <link rel="stylesheet" href="Styles/common.css">
-    <link rel="stylesheet" href="Styles/footer.css">
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
-
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Mariia Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <header>
-        <div class="left">
 
-            <a href="About.html">Mariia Shevchenko</a>
-     
-        </div>
-
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <spanc class="hamburger"></span>
-        </button>
-
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="works.html" class="nav__link">My works</a></li>
-                <li class="nav__item"><a href="About.html" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact me</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="contact-section">
-        <div class="contact-container">
-            <form onsubmit="sendEmail(); reset; return false">
-                <div class="headline">
-                    <h4>GET IN TOUCH</h4>
-                </div>
-                
-                <input type="text" id="name" placeholder="Your name" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <textarea id="message" rows="4" placeholder="Message"></textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
-
-        </div>
-        <div class="contact-container-2">
-            <div class="alternative">
-                <h4>You can also find me on:</h4>
-            </div>
-            <div class="social-icon">
-                <a href="https://www.instagram.com/astromarrr" target="_blank">
-                     <h3>Instagram</h3>
-                </a>
-            </div>
-
-            <div class="social-icon">
-                <a href="https://github.com/mshevch" target="_blank">
-                    <h3>GitHub</h3>
-                </a>
-            </div>
-            
-            <div class="social-icon">
-                <a href="https://www.linkedin.com/in/mshevch" target="_blank">
-                    <h3>LinkedIn</h3>
-                </a>
-
-            </div>
-
-            <div class="social-icon">
-                <h3>Or you can e-mail me directly <a href="mailto: mariia.shevchenko>HERE</a></h3>
-                
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <div class="footer">
-
-        <div class="navigation-links">
-
-            <div class="navigation">
-                <a href="index.html"><h3>Home</h3></a>
-            </div>
-
-            <div class="navigation">
-                <a href="works.html"><h3>Works</h3></a>
-            </div>
-
-            <div class="navigation">
-                <a href="About.html"><h3>About</h3></a>
-            </div>
-
-            <div class="navigation">
-                <a href="Contact.html"><h3>Contact</h3></a>
-            </div>
-
-        </div>   
-        
-        <div class="social-links">
-
-            <div class="social-icon">
-                <a href="https://www.instagram.com/astromarrr" target="_blank">
-                     <i class="fa-brands fa-square-instagram"></i>
-                </a>
-                
-            </div>
-
-            <div class="social-icon">
-                <a href="https://www.linkedin.com/in/mshevch" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-            </div>
-
-            <div class="social-icon">
-                <a href="https://github.com/mshevch" target="_blank">
-                    <i class="fa-brands fa-square-github"></i>
-                </a>
-            </div>
-
-            <div class="social-icon">
-                <i class="fa-solid fa-share-from-square"></i>
-            </div>
-
-        </div>
-
-        <div class="copyright">
-            <p> &copy; 2026 Mariia Shevchenko &#124; All Rights Reserved </p>
-        </div>
-
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand"><span class="brand-icon">🌤️</span>Mariia<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="Styles/index.js"></script>
+  <main>
+    <p class="eyebrow">Get In Touch</p>
+    <h1>Contact Me</h1>
+    <p class="lede" style="margin-bottom: 2.5rem;">
+      Questions about a piece, commission requests, or just want to say hi —
+      the form below works, or reach out directly.
+    </p>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "mariia.shevchenko@gmail.com",
-                Password : "",
-                To : 'mariia.shevchenko@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "Portfolio contact inquiry",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
+    <div class="contact-grid">
+      <form class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self: flex-start; border: none; cursor: pointer;">
+          Send message
+        </button>
+        <p class="form-status" role="status"></p>
+      </form>
+
+      <div class="contact-info-card">
+        <div class="row">
+          <div class="icon">@</div>
+          <div>
+            <strong>Email</strong><br />
+            <!-- PLACEHOLDER: replace with your real email -->
+            <a href="mailto:youremail@example.com">youremail@example.com</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon">in</div>
+          <div>
+            <strong>Instagram</strong><br />
+            <!-- PLACEHOLDER: replace with your handle -->
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="icon">◎</div>
+          <div>
+            <strong>Based in</strong><br />
+            Oklahoma
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; <span id="year"></span> — Built with light blue and a little patience.
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
