@@ -54,14 +54,19 @@ function initLightbox() {
 
   const titleEl = lightbox.querySelector(".lightbox-title");
   const mediumEl = lightbox.querySelector(".lightbox-medium");
+  const imgEl = lightbox.querySelector(".lightbox-img");
   const closeBtn = lightbox.querySelector(".lightbox-close");
 
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       const title = card.querySelector(".title")?.textContent ?? "";
       const medium = card.querySelector(".medium")?.textContent ?? "";
+      const image = card.dataset.image ?? ""; 
+
       titleEl.textContent = title;
       mediumEl.textContent = medium;
+      imgEl.src = image;
+      imgEl.alt = title;
       lightbox.classList.add("open");
     });
   });

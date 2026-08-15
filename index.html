@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mariia Art — Home</title>
+  <title>Mar's Art — Home</title>
   <meta name="description" content="Original artwork across pastel, watercolor, and mixed media." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
 
   <header class="site-header">
     <div class="nav-wrap">
-      <a href="index.html" class="brand">Mariia<span class="brand-dot">.</span></a>
+      <a href="index.html" class="brand">Mar</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -41,11 +41,9 @@
         <ellipse cx="28" cy="12" rx="16" ry="12" fill="var(--blush)" opacity="0.7"/>
       </svg>
       <div class="hero-copy">
-        <p class="eyebrow">Original Artwork</p>
         <h1>Small studies,<br />built one layer<br />at a time.</h1>
         <p class="lede">
-          A collection of pastel, watercolor, and mixed-media pieces —
-          drawn, layered, and revised until each one feels finished.
+          A collection of pastel, watercolor, and mixed-media pieces that after drawing and painting brought me joy.
         </p>
         <div class="hero-actions">
           <a href="works.html" class="btn btn-primary">View the works</a>
@@ -53,12 +51,9 @@
         </div>
       </div>
       <div class="hero-frame">
+        <div class="placeholder has-image">
         <!-- PLACEHOLDER: swap this div for <img src="images/hero.jpg" alt="Featured artwork"> -->
-        <div class="placeholder">
-          <span>
-            <span class="plus">🖼️</span>
-            Featured artwork image<br />(images/hero.jpg)
-          </span>
+        <img src="images/fatwomanoilpastel.jpg" alt="Featured artwork">
         </div>
       </div>
     </section>
@@ -74,24 +69,27 @@
       <div class="gallery-grid">
         <div class="art-card">
           <!-- PLACEHOLDER: replace with <img src="images/piece-1.jpg" alt="..."> -->
-          <div class="placeholder"><span><span class="plus">🖼️</span>images/piece-1.jpg</span></div>
-          <div class="art-card-info">
-            <div class="title">Untitled Study I</div>
-            <div class="medium">Soft pastel on paper</div>
+          <div class="art-card" data-category="pastel" data-image="images/asiangirlsoftpastel.jpg">
+           <img src="images/asiangirlsoftpastel.jpg" alt="Hopeful, soft pastel">
+            <div class="title">>Hopeful</div>
+            <div class="medium">Soft pastel</div>
           </div>
         </div>
         <div class="art-card">
-          <div class="placeholder"><span><span class="plus">🖼️</span>images/piece-2.jpg</span></div>
-          <div class="art-card-info">
-            <div class="title">Quiet Morning</div>
-            <div class="medium">Watercolor</div>
+          <div class="art-card" data-category="mixed" data-image="images/jamespainting.jpg">
+            <img src="images/jamespainting.jpg" alt="Outlook on a train, Acryla Gouache">
+            <div class="art-card-info">
+              <div class="title">Outlook on a train</div>
+              <div class="medium">Acryla Gouache</div>
+            </div>
           </div>
         </div>
         <div class="art-card">
-          <div class="placeholder"><span><span class="plus">🖼️</span>images/piece-3.jpg</span></div>
+         <div class="art-card" data-category="pastel" data-image="images/catsoftpastel.jpg">
+        <img src="images/catsoftpastel.jpg" alt="Cats of Pastel, soft pastel">
           <div class="art-card-info">
-            <div class="title">Marker Sketch No. 4</div>
-            <div class="medium">Water-based marker</div>
+            <div class="title">Cats Of Wonder</div>
+            <div class="medium">Soft pastel</div>
           </div>
         </div>
       </div>

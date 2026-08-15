@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Works — Mariia Art</title>
+  <title>Works — Mar's Art</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@
 
   <header class="site-header">
     <div class="nav-wrap">
-      <a href="index.html" class="brand"><span class="brand-icon">🌤️</span>Mariia<span class="brand-dot">.</span></a>
+      <a href="index.html" class="brand">Mar</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -29,11 +29,9 @@
   </header>
 
   <main>
-    <p class="eyebrow">Full Collection</p>
     <h1>Works</h1>
     <p class="lede" style="margin-bottom: 2rem;">
-      Browse by medium, or click any piece for a closer look. Swap each
-      placeholder for your own image file in the <code>images/</code> folder.
+      Browse by medium, or click any piece for a closer look.
     </p>
 
     <div class="filter-row">
@@ -46,19 +44,19 @@
 
     <div class="gallery-grid">
 
-      <div class="art-card" data-category="pastel">
-        <div class="placeholder"><span><span class="plus">🖼️</span>images/piece-1.jpg</span></div>
+      <div class="art-card" data-category="pastel" data-image="images/asiangirlsoftpastel.jpg">
+        <img src="images/asiangirlsoftpastel.jpg" alt="Hopeful, soft pastel">
         <div class="art-card-info">
-          <div class="title">Untitled Study I</div>
+          <div class="title">Hopeful</div>
           <div class="medium">Soft pastel on paper</div>
         </div>
       </div>
 
-      <div class="art-card" data-category="watercolor">
-        <div class="placeholder"><span><span class="plus">🖼️</span>images/piece-2.jpg</span></div>
+      <div class="art-card" data-category="pastel" data-image="images/catsoftpastel.jpg">
+        <img src="images/catsoftpastel.jpg" alt="Cats of Pastel, soft pastel">
         <div class="art-card-info">
-          <div class="title">Quiet Morning</div>
-          <div class="medium">Watercolor</div>
+          <div class="title">Cats Of Wonder</div>
+          <div class="medium">Soft pastel</div>
         </div>
       </div>
 
@@ -70,18 +68,18 @@
         </div>
       </div>
 
-      <div class="art-card" data-category="mixed">
-        <div class="placeholder"><span><span class="plus">🖼️</span>images/piece-4.jpg</span></div>
+      <div class="art-card" data-category="mixed" data-image="images/jamespainting.jpg">
+        <img src="images/jamespainting.jpg" alt="Outlook on a train, Acryla Gouache">
         <div class="art-card-info">
-          <div class="title">Layered Study</div>
-          <div class="medium">Gouache and colored pencil</div>
+          <div class="title">Outlook on a train</div>
+          <div class="medium">Acryla Gouache</div>
         </div>
       </div>
 
-      <div class="art-card" data-category="pastel">
-        <div class="placeholder"><span><span class="plus">🖼️</span>images/piece-5.jpg</span></div>
+      <div class="art-card" data-category="pastel" data-image="images/fatwomanoilpastel.jpg">
+        <img src="images/fatwomanoilpastel.jpg" alt="Beauty in all forms, oil pastel">
         <div class="art-card-info">
-          <div class="title">Untitled Study II</div>
+          <div class="title">Beauty in all forms</div>
           <div class="medium">Oil pastel</div>
         </div>
       </div>
@@ -100,12 +98,17 @@
   <!-- Lightbox: shows title + medium for the clicked card. -->
   <!-- PLACEHOLDER: add an <img> inside .lightbox-inner .placeholder once real files are wired in. -->
   <div class="lightbox" id="lightbox">
-    <div class="lightbox-inner">
-      <button class="lightbox-close" aria-label="Close">&times;</button>
-      <div class="placeholder"><span><span class="plus">🖼️</span>Full-size image goes here</span></div>
-      <div class="title lightbox-title" style="font-family: var(--font-display); font-size: 1.2rem;"></div>
-      <div class="medium lightbox-medium" style="color: var(--ink-soft); font-size: 0.9rem; margin-top: 0.3rem;"></div>
+    tml
+<div class="lightbox-inner">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <div class="lightbox-scroll">
+    <div class="placeholder has-image">
+      <img class="lightbox-img" src="" alt="">
     </div>
+    <div class="title lightbox-title" style="font-family: var(--font-display); font-size: 1.2rem;"></div>
+    <div class="medium lightbox-medium" style="color: var(--ink-soft); font-size: 0.9rem; margin-top: 0.3rem;"></div>
+  </div>
+</div>
   </div>
 
   <footer class="site-footer">
